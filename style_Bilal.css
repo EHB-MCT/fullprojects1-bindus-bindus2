@@ -126,7 +126,7 @@ header nav a:after {
 
 .button {
 	display: block;
-	grid-column: 10 / 13;
+	grid-column: 11 / 13;
 	height: 40px;
 	font-weight: 600;
 	line-height: 40px;
@@ -204,6 +204,7 @@ header nav a:nth-child(1):hover~#indicator {
 
 header .button {
 	margin-bottom: 30px;
+	width: 75%;
 }
 
 .intro {
@@ -216,10 +217,15 @@ header .button {
 }
 
 .backgroundimg {
-	background-image: url(images/introimg2.jpg);
+	background-image: url(images/introimg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.backgroundimg svg {
+	margin-top: -100px;
+	border-top: solid 20px white;
 }
 
 .introwrap {
@@ -233,10 +239,16 @@ header .button {
 	grid-row: 1 / 2;
 }
 
-.intro h1:nth-child(2) {
-	grid-row: 2 / 3;
+.intro h1:nth-child(3) {
+	grid-row: 1 / 2;
 }
 
 .intro .button {
-	grid-row: 3 / 4;
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	width: 16%;
 }
+
+figure {}
+
+figure svg {}
