@@ -97,7 +97,7 @@ header nav ul li a {
 	width: 33.333%;
 	text-align: center;
 	font-weight: bold;
-	font-family: "Poppinslight";
+	font-family: "Poppinsmed";
 	transition: 0.2s ease color;
 }
 
@@ -249,6 +249,94 @@ header .button {
 	width: 16%;
 }
 
-figure {}
+.infowrapper {
+	background-color: #c7ddd8;
+	margin: 0 auto;
+	padding: 0 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
 
-figure svg {}
+.info {
+	padding: 30px 0 30px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 80px 150px auto;
+	grid-column-gap: 50px;
+}
+
+.info h2 {
+	color: black;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	font-size: 30px;
+}
+
+.info .underlining {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	border-bottom: 1px solid black;
+	opacity: 50%;
+}
+
+.info p {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.info img {
+	grid-column: 1 / 2;
+	grid-row: 1 / 4;
+	width: 100%;
+}
+
+.info .button {
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+	width: 25%;
+}
+
+.cards {
+	padding: 30px 0 30px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(2, minmax(100px, auto));
+	grid-column-gap: 50px;
+}
+
+.card1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25% 10% 65%;
+	background-color: red;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.card2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25% 10% 65%;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.card3 {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25% 10% 65%;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.estetic {
+	background-color: #214051;
+}
