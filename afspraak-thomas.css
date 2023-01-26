@@ -30,6 +30,7 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
+	z-index: 1;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(1, minmax(100px, auto));
 	position: relative;
@@ -212,20 +213,18 @@ header .button {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, minmax(100px, auto));
 	position: relative;
-}
-
-.backgroundimg {
-	background-image: url(images/afspraak.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .backgroundimg svg {
 	margin-top: -100px;
 	border-top: solid 20px white;
+	filter: drop-shadow(5px 1px 10px black);
+	z-index: 0;
+}
+
+.intro h1 {
+	color: black;
 }
 
 .introwrap {
@@ -249,97 +248,102 @@ header .button {
 	width: 16%;
 }
 
-.infowrapper {
-	background-color: #c7ddd8;
-	margin: 0 auto;
-	padding: 0 200px;
+.container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	color: #eee;
+	display: flex;
+	justify-content: start;
+	margin-left: 205px;
+}
+
+.agenda {
+	width: 45rem;
+	height: 52rem;
+	background-color: #214051;
+	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.maand {
+	width: 100%;
+	height: 12rem;
+	background-color: #04838d;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.maand i {
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+.maand h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
+}
+
+.maand p {
+	font-size: 1.6rem;
+}
+
+.weekdays {
+	width: 100%;
+	height: 5rem;
+	padding: 0 0.4rem;
+	display: flex;
+	align-items: center;
+}
+
+.weekdays div {
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+	width: calc(44.2rem / 7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.dagen {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0.2rem;
 }
 
-.info {
-	padding: 30px 0 30px 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 80px 150px auto;
-	grid-column-gap: 50px;
+.dagen div {
+	font-size: 1.4rem;
+	margin: 0.3rem;
+	width: calc(40.2rem / 7);
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+	transition: background-color 0.2s;
 }
 
-.info h2 {
-	color: black;
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-	font-size: 30px;
+.dagen div:hover:not(.today) {
+	background-color: #262626;
+	/*border: 1px solid #777;*/
+	cursor: pointer;
 }
 
-.info .underlining {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-	border-bottom: 1px solid black;
-	opacity: 50%;
+.prev-date,
+.next-date {
+	opacity: 0.5;
 }
 
-.info p {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-
-.info img {
-	grid-column: 1 / 2;
-	grid-row: 1 / 4;
-	width: 100%;
-}
-
-.info .button {
-	grid-row: 3 / 4;
-	grid-column: 2 / 3;
-	width: 25%;
-}
-
-.cards {
-	padding: 30px 0 30px 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: repeat(2, minmax(100px, auto));
-	grid-column-gap: 50px;
-	width: 100%;
-}
-
-.card1 {
-	grid-column: 1 / 2;
-	grid-row: 1 / 3;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 25% 10% 65%;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 10px;
-}
-
-.card2 {
-	grid-column: 2 / 3;
-	grid-row: 1 / 3;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 25% 10% 65%;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 10px;
-}
-
-.card3 {
-	grid-column: 3 / 4;
-	grid-row: 1 / 3;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 25% 10% 65%;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 10px;
-}
-
-.estetic {
-	background-color: #214051;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
+.today {
+	background-color: #167;
 }
