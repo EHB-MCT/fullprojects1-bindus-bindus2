@@ -270,7 +270,7 @@ header .button {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	grid-row: 2 / 4;
+	grid-row: 2 / 3;
 	align-self: center;
 	filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 }
@@ -323,11 +323,23 @@ header .button {
 	margin-top: 50px;
 }
 
+.bubble8 {
+	grid-column: 9 / 10;
+	width: 150px;
+	height: 150px;
+	grid-row: 2 / 3;
+	border-radius: 50%;
+	filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
+	margin-top: 50px;
+	align-self: end;
+}
+
 .backgroundimg h1 {
 	color: #214051;
 	grid-column: 8 / 11;
 	grid-row: 3 / 4;
 	text-align: center;
+	font-family: "Poppinsbold";
 }
 
 .infowrapper {
@@ -351,6 +363,7 @@ header .button {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 	font-size: 30px;
+	font-family: "Poppinsbold";
 }
 
 .info .underlining {
@@ -400,6 +413,7 @@ header .button {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	font-size: 30px;
+	font-family: "Poppinsbold";
 }
 
 .wordlid .underlining {
@@ -424,7 +438,7 @@ header .button {
 	padding: 30px 0 30px 0;
 	display: grid;
 	grid-template-columns: 30.3% 30.3% 30.3%;
-	grid-template-rows: 24em;
+	grid-template-rows: 18em;
 	grid-column-gap: 50px;
 	width: 100%;
 }
@@ -434,7 +448,7 @@ header .button {
 	grid-row: 1 / 2;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 15% 17% 65%;
+	grid-template-rows: 17% 20% 65%;
 	background-color: white;
 	border-radius: 10px;
 	box-shadow: 0px 0px 7px black;
@@ -446,7 +460,7 @@ header .button {
 	grid-row: 1 / 2;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 15% 17% 65%;
+	grid-template-rows: 17% 20% 65%;
 	background-color: white;
 	box-shadow: 0px 0px 7px black;
 	border-radius: 10px;
@@ -457,7 +471,7 @@ header .button {
 	grid-row: 1 / 2;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 15% 17% 65%;
+	grid-template-rows: 17% 20% 65%;
 	background-color: white;
 	box-shadow: 0px 0px 7px black;
 	border-radius: 10px;
@@ -472,7 +486,7 @@ header .button {
 .card1 img {
 	height: 100%;
 	margin: 0 auto;
-	margin-top: -50px;
+	margin-top: -30px;
 	border: 4px solid #214051;
 	border-radius: 40px;
 }
@@ -480,8 +494,7 @@ header .button {
 .card2 img {
 	height: 100%;
 	margin: 0 auto;
-	margin-top: -50px;
-	margin-top: -50px;
+	margin-top: -30px;
 	border: 4px solid #214051;
 	border-radius: 40px;
 }
@@ -489,9 +502,67 @@ header .button {
 .card3 img {
 	height: 100%;
 	margin: 0 auto;
-	margin-top: -50px;
-	margin-top: -50px;
+	margin-top: -30px;
 	border: 4px solid #214051;
 	border-radius: 40px;
 }
 
+.card1 .add {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.card2 .add {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.card3 .add {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrapperfoot {
+	margin: 0 auto;
+	padding: 0 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.colorbackground {
+	background-color: #04838d;
+}
+
+.einde {
+	padding: 50px 0 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: minmax(10em, auto);
+	grid-column-gap: 20px;
+	color: white;
+}
+
+.Ops1 h3 {
+	font-family: "Poppinsbold";
+}
+
+.Ops1 {
+	border-right: 1px solid white;
+	padding-right: 20px;
+}
+
+.Ops2 h3 {
+	font-family: "Poppinsbold";
+	text-align: center;
+}
+
+.Ops2 {
+	border-right: 0.5px solid white;
+	padding-right: 20px;
+}
