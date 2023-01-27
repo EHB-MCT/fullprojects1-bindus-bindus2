@@ -223,15 +223,17 @@ header .button {
 }
 
 .bodywrap {
-	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(10, auto);
+	grid-template-rows: repeat(1, minmax(100px, auto));
+	display: grid;
 	margin-top: -180px;
 }
 
 .intro {
 	grid-column: 2/5;
+	margin-top: 50px;
 	text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+	z-index: 10;
 }
 
 .intro a {
@@ -239,6 +241,10 @@ header .button {
 	color: #fff;
 	font-weight: bold;
 	font-size: 50px;
+}
+
+.intro a:hover {
+	text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .Tussentitel {
@@ -255,6 +261,7 @@ header .button {
 	width: 90%;
 	grid-column: 2/4;
 }
+
 .picto2 {
 	width: 90%;
 	grid-column: 4/6;
@@ -280,21 +287,35 @@ header .button {
 .picto7 {
 	width: 100%;
 	grid-column: 8/9;
-
 	margin-top: 200px;
+}
+
+.pictotext {
+	text-decoration: none;
+	color: #214051;
+	grid-column: 6/8;
+	margin-left: 70px;
+	margin-top: 50px;
+}
+
+.pictotext:hover {
+	color: #04838d;
 }
 
 .vakje1 {
 	width: 100%;
 	grid-column: 2/5;
+	margin-left: 10px;
 }
 .vakje2 {
 	width: 100%;
 	grid-column: 5/8;
+	margin-left: 50px;
 }
 .vakje3 {
 	width: 100%;
 	grid-column: 8/11;
+	margin-left: 90px;
 }
 
 .mindmapWrap {
@@ -313,6 +334,7 @@ header .button {
 
 .Tussentitel2 {
 	grid-column: 2/5;
+	margin-bottom: -200px;
 }
 .Tussentitel2 h1 {
 	color: #fff;
@@ -333,34 +355,34 @@ header .button {
 	width: 90%;
 }
 
-.app1 img {
+.app1 {
 	margin-top: 100px;
-	width: 60%;
-	grid-column: 1/2;
+	width: 40%;
+	grid-column: 2/2;
 }
 
-.app2 img {
+.app2 {
 	margin-top: 100px;
-	width: 50%;
-	grid-column: 2/3;
+	width: 30%;
+	grid-column: 2/2;
 }
-.app3 img {
+.app3 {
 	margin-top: 100px;
-	width: 50%;
+	width: 30%;
 	grid-column: 3/4;
 }
-.app4 img {
+.app4 {
 	margin-top: 100px;
-	width: 50%;
+	width: 30%;
 	grid-column: 4/5;
 }
-.app5 img {
+.app5 {
 	margin-top: 100px;
-	width: 50%;
+	width: 30%;
 	grid-column: 5/6;
 }
-.app6 img {
+.app6 {
 	margin-top: 100px;
-	width: 50%;
+	width: 30%;
 	grid-column: 6/7;
 }
