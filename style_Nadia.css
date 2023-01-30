@@ -30,6 +30,7 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
+	z-index: 1;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(1, minmax(100px, auto));
 	position: relative;
@@ -65,15 +66,15 @@ header {
 }
 
 header img {
-	grid-column: 1 / 3;
-	width: 100%;
+	grid-column: 1 / 2;
+	width: 200%;
 	align-self: center;
 	margin: 0 auto;
 	display: block;
 }
 
 header nav {
-	grid-column: 6 / 10;
+	grid-column: 3 / 11;
 	align-self: center;
 	position: absolute;
 	display: table;
@@ -97,6 +98,7 @@ header nav ul li a {
 	width: 33.333%;
 	text-align: center;
 	font-weight: bold;
+	font-size: 15px;
 	font-family: "Poppinsmed";
 	transition: 0.2s ease color;
 }
@@ -130,7 +132,7 @@ header nav a:after {
 	height: 40px;
 	font-weight: 600;
 	line-height: 40px;
-	font-size: 18px;
+	font-size: 14px;
 	text-decoration: none;
 	color: white;
 	background: #214051;
@@ -138,7 +140,7 @@ header nav a:after {
 	border-radius: 0px;
 	text-align: center;
 	position: relative;
-	padding: 5px 15px;
+	padding: 1px 10px;
 	transition: all 0.35s;
 	top: 25%;
 }
@@ -207,17 +209,7 @@ header .button {
 	width: 75%;
 }
 
-.intro {
-	width: 100%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, minmax(100px, auto));
-	position: relative;
-}
-
 .backgroundimg {
-	background-image: url(images/DSC01548.JPG);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -225,31 +217,172 @@ header .button {
 
 .backgroundimg svg {
 	margin-top: -100px;
+	z-index: 0;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0/0.4));
 	border-top: solid 20px white;
 }
 
-.introwrap {
-	margin: 0 auto;
-	padding: 0 200px;
-	display: flex;
-	flex-wrap: wrap;
+.bodywrap {
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(1, minmax(100px, auto));
+	display: grid;
+	margin-top: -180px;
 }
 
-.intro h1:nth-child(1) {
-	grid-row: 1 / 2;
+.intro {
+	grid-column: 2/5;
+	margin-top: 50px;
+	text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+	z-index: 10;
 }
 
-.intro h1:nth-child(3) {
-	grid-row: 1 / 2;
+.intro a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 50px;
 }
 
-.infowrapper {
+.intro a:hover {
+	text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Tussentitel {
+	grid-column: 2/5;
+	margin-top: 100px;
+}
+
+.Tussentitel h1 {
+	color: #214051;
+	font-size: 28px;
+}
+
+.picto1 {
+	width: 90%;
+	grid-column: 2/4;
+}
+
+.picto2 {
+	width: 90%;
+	grid-column: 4/6;
+}
+.picto3 {
+	width: 90%;
+	grid-column: 6/8;
+}
+.picto4 {
+	width: 90%;
+	grid-column: 8/10;
+}
+.picto5 {
+	width: 90%;
+	grid-column: 10/12;
+}
+
+.picto6 {
+	width: 70%;
+	grid-column: 5/7;
+	margin-top: 200px;
+}
+.picto7 {
+	width: 100%;
+	grid-column: 8/9;
+	margin-top: 200px;
+}
+
+.pictotext {
+	text-decoration: none;
+	color: #214051;
+	grid-column: 6/8;
+	margin-left: 70px;
+	margin-top: 50px;
+}
+
+.pictotext:hover {
+	color: #04838d;
+}
+
+.vakje1 {
+	width: 100%;
+	grid-column: 2/5;
+	margin-left: 10px;
+}
+.vakje2 {
+	width: 100%;
+	grid-column: 5/8;
+	margin-left: 50px;
+}
+.vakje3 {
+	width: 100%;
+	grid-column: 8/11;
+	margin-left: 90px;
+}
+
+.mindmapWrap {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(10, auto);
+	background-color: #04838d;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.mindmapWrap img {
+	grid-column: 3/10;
+	width: 100%;
+}
+
+.Tussentitel2 {
+	grid-column: 2/5;
+	margin-bottom: -200px;
+}
+.Tussentitel2 h1 {
+	color: #fff;
+	font-size: 28px;
 }
 
 .affiche {
-	background-color: green;
-	grid-column: 3/10;
+	margin-top: 150px;
+	grid-column: 3/6;
+}
+
+.affiche2 {
+	margin-top: 150px;
+	grid-column: 8/10;
+}
+
+.affiche2 img {
+	width: 90%;
+}
+
+.app1 {
+	margin-top: 100px;
+	width: 40%;
+	grid-column: 2/2;
+}
+
+.app2 {
+	margin-top: 100px;
+	width: 30%;
+	grid-column: 2/2;
+}
+.app3 {
+	margin-top: 100px;
+	width: 30%;
+	grid-column: 3/4;
+}
+.app4 {
+	margin-top: 100px;
+	width: 30%;
+	grid-column: 4/5;
+}
+.app5 {
+	margin-top: 100px;
+	width: 30%;
+	grid-column: 5/6;
+}
+.app6 {
+	margin-top: 100px;
+	width: 30%;
+	grid-column: 6/7;
 }
