@@ -35,12 +35,20 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(1, minmax(100px, auto));
 	position: relative;
+	z-index: 1;
+}
+
+.backgroundimg svg {
+	margin-top: -100px;
+	z-index: 0;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0/0.4));
+	border-top: solid 20px white;
 }
 
 h1 {
 	font-size: 50px;
 	font-family: "Poppinsbold";
-	color: white;
+	color: #214051;
 }
 
 nav {
@@ -219,7 +227,7 @@ header .button {
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, minmax(100px, auto));
 	position: relative;
-	color: white;
+	color: #214051;
 	opacity: 1;
 }
 .introwrap {
@@ -230,32 +238,43 @@ header .button {
 }
 
 .intro h1 {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #214051;
 	width: 35%;
 	padding-bottom: 20px;
 }
 
 /* onze team bubble*/
 .bubble {
-	width: 100%;
-	height: 60vh;
-	display: flex;
+	height: 100px;
 	justify-content: center;
+	padding-left: 300px;
 	align-items: center;
 	position: relative;
-	transition-duration: 60s;
+	transition-duration: 2s;
+	width: 20%;
 }
 
 .image:hover {
-	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
 	transform: scale(0.95);
-	border-radius: 50%;
+	border-radius: 100%;
 	border: 10px;
 }
 .image img {
 	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	border: 10px;
+}
+.image1:hover {
+	transform: scale(0.95);
+	border-radius: 100%;
+	border: 10px;
+}
+.image1 img {
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
 	border: 10px;
 }
