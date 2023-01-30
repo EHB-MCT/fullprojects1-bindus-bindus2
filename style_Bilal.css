@@ -573,3 +573,12 @@ header .button {
 .Ops2 img {
 	width: 100%;
 }
+
+footer p {
+	line-height: 1.7em;
+}
+
+footer p a {
+	text-decoration: none;
+	color: white;
+}
