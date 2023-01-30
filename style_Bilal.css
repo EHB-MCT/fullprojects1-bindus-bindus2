@@ -222,7 +222,6 @@ header .button {
 	display: grid;
 	grid-template-columns: 5% 15% 10% 5% 5% 5% 10% 10% 15% 20%;
 	grid-template-rows: repeat(3, minmax(45px, auto));
-	background-image: url(images/afspraak.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -569,4 +568,17 @@ header .button {
 .Ops2 {
 	border-right: 0.5px solid white;
 	padding-right: 20px;
+}
+
+.Ops2 img {
+	width: 100%;
+}
+
+footer p {
+	line-height: 1.7em;
+}
+
+footer p a {
+	text-decoration: none;
+	color: white;
 }

@@ -5,11 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="afspraak-thomas.css" />
+		<script src="script-thomas.js" defer></script>
 		<title>Afspraak Maken</title>
 	</head>
 
 	<body>
-		<script src="script-thomas.js"></script>
 		<div class="backgroundimg">
 			<div class="wrapper">
 				<div class="navwrap">
@@ -42,68 +42,25 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="agenda">
-				<div class="maand">
-					<i class="fas fa-angle-left prev"></i>
-					<div class="datum">
-						<h1>Januari</h1>
-						<p>Do 26 Januari, 2023</p>
+			<div class="calendar">
+				<div class="month">
+					<div id="prev" class="left-arrow"></div>
+					<div class="date">
+						<h1>test</h1>
+						<p>test</p>
 					</div>
-					<i class="fas fa-angle-right next"></i>
+					<div id="next" class="right-arrow"></div>
 				</div>
 				<div class="weekdays">
-					<div>Zo</div>
-					<div>Ma</div>
-					<div>Di</div>
-					<div>Woe</div>
-					<div>Do</div>
-					<div>Vrij</div>
-					<div>Zat</div>
+					<div>Su</div>
+					<div>Mo</div>
+					<div>Tu</div>
+					<div>Wed</div>
+					<div>Thu</div>
+					<div>Fri</div>
+					<div>Sat</div>
 				</div>
-				<div class="dagen">
-					<div class="prev-date">26</div>
-					<div class="prev-date">27</div>
-					<div class="prev-date">28</div>
-					<div class="prev-date">29</div>
-					<div class="prev-date">30</div>
-					<div class="prev-date">31</div>
-					<div>1</div>
-					<div>2</div>
-					<div>3</div>
-					<div>4</div>
-					<div>5</div>
-					<div>6</div>
-					<div>7</div>
-					<div>8</div>
-					<div>9</div>
-					<div>10</div>
-					<div>11</div>
-					<div>12</div>
-					<div>13</div>
-					<div>14</div>
-					<div>15</div>
-					<div>16</div>
-					<div>17</div>
-					<div>18</div>
-					<div>19</div>
-					<div>20</div>
-					<div>21</div>
-					<div>22</div>
-					<div>23</div>
-					<div>24</div>
-					<div>25</div>
-					<div class="today">26</div>
-					<div>27</div>
-					<div>28</div>
-					<div>29</div>
-					<div>30</div>
-					<div>31</div>
-					<div class="next-date">1</div>
-					<div class="next-date">2</div>
-					<div class="next-date">3</div>
-					<div class="next-date">4</div>
-					<div class="next-date">5</div>
-				</div>
+				<div class="days"></div>
 			</div>
 		</div>
 	</body>
