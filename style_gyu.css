@@ -15,7 +15,7 @@
 
 body {
 	margin: 0;
-	background-color: #b7dcdb;
+	background-color: #fff;
 	font-family: "Poppinsmed";
 }
 
@@ -44,7 +44,9 @@ body {
 	filter: drop-shadow(3px 5px 2px rgb(0 0 0/0.4));
 	border-top: solid 20px white;
 }
-
+.block {
+	background-color: #b7dcdb;
+}
 h1 {
 	font-size: 50px;
 	font-family: "Poppinsbold";
@@ -271,6 +273,7 @@ header .button {
 	padding: 0;
 	text-align: center;
 }
+
 .bubble1 {
 	height: 100px;
 	margin-left: 500px;
@@ -385,4 +388,61 @@ header .button {
 .image4 p {
 	align-items: left;
 	text-align: center;
+}
+
+.bubble5 {
+	height: 100px;
+	margin-left: 500px;
+	justify-content: center;
+	padding-left: 600px;
+
+	align-items: center;
+	position: relative;
+	transition-duration: 2s;
+	width: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.image5:hover {
+	transform: scale(0.95);
+	border-radius: 100%;
+	border: 10px;
+}
+.image5 img {
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+	height: 170px;
+	width: 170px;
+	border-radius: 100%;
+	border: 10px;
+	margin-left: 20px;
+}
+
+.bubble6 {
+	height: 100px;
+	margin-left: 650px;
+	justify-content: center;
+	padding-left: 20px;
+	align-items: center;
+	position: relative;
+	transition-duration: 2s;
+	width: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image6:hover {
+	transform: scale(0.95);
+	border-radius: 100%;
+	border: 10px;
+}
+.image6 img {
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+	border: 10px;
+	margin-left: 20px;
 }
