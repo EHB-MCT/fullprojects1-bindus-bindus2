@@ -44,8 +44,11 @@ body {
 	filter: drop-shadow(3px 5px 2px rgb(0 0 0/0.4));
 	border-top: solid 20px white;
 }
+
+/* block */
 .block {
 	background-color: #b7dcdb;
+	margin-bottom: -200px;
 }
 h1 {
 	font-size: 50px;
@@ -392,10 +395,9 @@ header .button {
 
 .bubble5 {
 	height: 100px;
-	margin-left: 500px;
+	margin-left: 400px;
 	justify-content: center;
 	padding-left: 600px;
-
 	align-items: center;
 	position: relative;
 	transition-duration: 2s;
@@ -442,6 +444,33 @@ header .button {
 	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
 	height: 120px;
 	width: 120px;
+	border-radius: 100%;
+	border: 10px;
+	margin-left: 20px;
+}
+.bubble7 {
+	height: 80px;
+	margin-bottom: 100px;
+	margin-left: 550px;
+	justify-content: center;
+	padding-left: 20px;
+	align-items: center;
+	position: relative;
+	transition-duration: 2s;
+	width: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image7:hover {
+	transform: scale(0.95);
+	border-radius: 100%;
+	border: 10px;
+}
+.image7 img {
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+	height: 150px;
+	width: 150px;
 	border-radius: 100%;
 	border: 10px;
 	margin-left: 20px;
