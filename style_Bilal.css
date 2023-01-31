@@ -598,3 +598,7 @@ footer p a {
 .einde .Ops1:nth-child(5) {
 	border: none;
 }
+
+.einde p {
+	font-size: 13px;
+}
