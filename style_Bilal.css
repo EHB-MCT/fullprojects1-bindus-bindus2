@@ -68,7 +68,7 @@ header {
 
 header img {
 	grid-column: 1 / 3;
-	width: 100%;
+	width: 80%;
 	align-self: center;
 	margin: 0 auto;
 	display: block;
@@ -571,7 +571,7 @@ header .button {
 }
 
 .Ops2 img {
-	width: 100%;
+	width: 45%;
 }
 
 footer p {
@@ -581,4 +581,24 @@ footer p {
 footer p a {
 	text-decoration: none;
 	color: white;
+}
+
+.Ops1 img {
+	width: 18%;
+}
+
+.info h2 {
+	color: #214051;
+}
+
+.wordlid h2 {
+	color: #214051;
+}
+
+.einde .Ops1:nth-child(5) {
+	border: none;
+}
+
+.einde p {
+	font-size: 13px;
 }
