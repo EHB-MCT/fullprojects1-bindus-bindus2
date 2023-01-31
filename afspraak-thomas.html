@@ -17,9 +17,12 @@
 						<img src="images/Bindusworks.png" />
 						<nav>
 							<ul>
-								<li><a href="#">Home</a></li>
+								<li><a href="index.html">Home</a></li>
 								<li><a href="#">Wie is Bindus?</a></li>
-								<li><a href="afspraak.html">Afspraak maken</a></li>
+								<li><a href="#">Methode</a></li>
+								<li><a href="#">Ons aanbod</a></li>
+								<li><a href="#">Bindusblogt</a></li>
+								<li><a class="active" href="afspraak-thomas.html">Afspraak maken</a></li>
 							</ul>
 						</nav>
 						<div id="indicator"></div>
@@ -27,7 +30,6 @@
 					</header>
 				</div>
 			</div>
-
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320">
 				<path
 					fill="#ffffff"
@@ -46,8 +48,8 @@
 				<div class="month">
 					<div id="prev" class="left-arrow"></div>
 					<div class="date">
-						<h1>test</h1>
-						<p>test</p>
+						<h1></h1>
+						<p></p>
 					</div>
 					<div id="next" class="right-arrow"></div>
 				</div>
@@ -61,6 +63,75 @@
 					<div>Sat</div>
 				</div>
 				<div class="days"></div>
+			</div>
+		</div>
+		<div class="appointment">
+			<div class="date-appointment">
+				<h3>Datum</h3>
+			</div>
+			<div class="date-appointment-onclick">
+				<p></p>
+			</div>
+			<div class="location">
+				<h3>Locatie</h3>
+			</div>
+			<div class="location-choice">
+				<div class="select">
+					<span class="selected">Antwerpen</span>
+					<div class="caret"></div>
+				</div>
+				<ul class="menu">
+					<li class="selected-city">Antwerpen</li>
+					<li>Brussel</li>
+					<li>Limburg</li>
+				</ul>
+			</div>
+			<div class="hour"><h3>Uur</h3></div>
+			<div class="hour-choice">
+				<p>Voormiddag:</p>
+				<input type="radio" id="hour" name="hour" class="hour-color" />
+				9:00
+				<input type="radio" id="hour" name="hour" />
+				9:30
+				<input type="radio" id="hour" name="hour" />
+				10:00
+				<input type="radio" id="hour" name="hour" />
+				10:30
+				<input type="radio" id="hour" name="hour" />
+				11:00
+				<input type="radio" id="hour" name="hour" />
+				11:30
+				<br />
+				<p>Namiddag</p>
+				<input type="radio" id="hour" name="hour" />
+				13:00
+				<input type="radio" id="hour" name="hour" />
+				13:30
+				<input type="radio" id="hour" name="hour" />
+				14:00
+				<input type="radio" id="hour" name="hour" />
+				14:30
+				<input type="radio" id="hour" name="hour" />
+				15:00
+				<input type="radio" id="hour" name="hour" />
+				15:30
+				<input type="radio" id="hour" name="hour" />
+				16:00
+				<input type="radio" id="hour" name="hour" />
+				16:30
+			</div>
+			<div class="name"><h3>Naam Voornaam</h3></div>
+			<div class="name-write">
+				<input type="text" class="naam-voornaam" placeholder="Ex: Dwayne Johnson" />
+			</div>
+			<div class="reason"><h3>Reden</h3></div>
+			<div class="reason-write">
+				<textarea name="resaon" id="reason" cols="30" rows="10" class="reason-text" placeholder="Schrijf hier waarvoor u een afspraak nodig hebt..."></textarea>
+			</div>
+			<div class="submit">
+				<h3>
+					<a href="#"><span>Afspraak verzenden</span></a>
+				</h3>
 			</div>
 		</div>
 	</body>

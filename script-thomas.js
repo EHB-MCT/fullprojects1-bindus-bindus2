@@ -3,7 +3,8 @@ const date = new Date(),
 	prevNextIcon = document.querySelectorAll(".left-arrow , .right-arrow");
 
 let currYear = date.getFullYear(),
-	currMonth = date.getMonth();
+	currMonth = date.getMonth(),
+	date1 = new Date();
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -40,6 +41,9 @@ prevNextIcon.forEach((icon) => {
 		// click event
 		currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1; // active icons
 
+		// currMonth < 0 --> buttons disabled
+		// currMonth > 11 --> terug starten met jan etc
+		// = maand naar nul, jaar +1
 		/*if (currMonth < 0 || currMonth > 11) {
 			date = new Date(currYear, currMonth);
 			currYear = date.getFullYear();
@@ -48,5 +52,39 @@ prevNextIcon.forEach((icon) => {
 			date = new Date();
 		}*/
 		renderCalendar();
+	});
+});
+
+daysTag.addEventListener("click", (e) => {
+	console.log(e.target.innerHTML);
+	document.querySelector(".date-appointment-onclick p").innerHTML = e.target.innerHTML + " " + months[currMonth] + " " + currYear;
+});
+
+const dropdowns = document.querySelectorAll(".location-choice");
+dropdowns.forEach((dropdown) => {
+	const select = dropdown.querySelector(".select");
+	const caret = dropdown.querySelector(".caret");
+	const menu = dropdown.querySelector(".menu");
+	const options = dropdown.querySelector(".menu li");
+	const selected = dropdown.querySelector(".selected");
+
+	select.addEventListener("click", () => {
+		select.classList.toggle("selected-clicked");
+		caret.classList.toggle("caret-rotate");
+		menu.classList.toggle("menu-open");
+	});
+
+	options.forEach((option) => {
+		option.addEventListener("click", () => {
+			selected.innerText = option.innerText;
+			select.classList.remove("select-clicked");
+			caret.classList.remove("caret-rotate");
+			menu.classList.remove("menu-open");
+
+			options.forEach((option) => {
+				option.classList.remove("selected-city");
+			});
+			option.classList.add("selected-city");
+		});
 	});
 });
