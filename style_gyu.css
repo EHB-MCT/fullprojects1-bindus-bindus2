@@ -359,13 +359,13 @@ header .button {
 	height: 100px;
 	margin-left: 500px;
 	justify-content: center;
-	padding-left: 900px;
+	padding-left: 800px;
 	align-items: center;
 	position: relative;
 	transition-duration: 2s;
-	width: 40px;
+	width: 100px;
 	display: flex;
-	flex-wrap: wrap;
+	text-align: center;
 }
 
 .image4:hover {
@@ -375,9 +375,14 @@ header .button {
 }
 .image4 img {
 	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
-	height: 130px;
-	width: 130px;
+	height: 120px;
+	width: 120px;
 	border-radius: 100%;
 	border: 10px;
-	margin-left: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.image4 p {
+	align-items: left;
+	text-align: center;
 }
