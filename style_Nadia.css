@@ -225,30 +225,36 @@ header .button {
 
 .bodywrap {
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(1, minmax(100px, auto));
+	grid-template-rows: repeat(1, minmax(50px, auto));
 	display: grid;
 	margin-top: -180px;
 }
 
 .intro {
-	grid-column: 2/5;
+	grid-column: 2/10;
 	margin-top: 50px;
 
 	z-index: 10;
 }
 
 .intro a {
-	text-decoration-line: underline;
+	text-decoration-line: none;
 	color: #214051;
 	font-weight: bold;
 	font-size: 50px;
 }
 
 .intro h1 {
-	text-decoration-line: underline;
 	color: #214051;
 	font-weight: bold;
 	font-size: 50px;
+}
+
+.intro .underline {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	border-bottom: 1px solid black;
+	margin-bottom: 50px;
 }
 
 .intro a:hover {
@@ -378,34 +384,35 @@ header .button {
 }
 
 .leftPic img {
-	width: 210%;
-	border-radius: 10%;
+	width: 140%;
 }
 
 .leftPic {
-	grid-column: 2/3;
+	grid-column: 2/4;
 }
 
 .middelPic img {
-	width: 200%;
-	border-radius: 10%;
+	width: 140%;
 }
 
 .middelPic {
-	grid-column: 6/7;
+	grid-column: 6/8;
 }
 
 .rightPic img {
-	width: 200%;
-	border-radius: 10%;
+	width: 138%;
 }
 
 .rightPic {
-	grid-column: 10/11;
+	grid-column: 10/12;
 }
 
 .bodywrap h3 {
 	color: #214051;
+}
+
+.leftTitle {
+	margin-top: -100px;
 }
 
 .backgroundimg3 {
@@ -457,4 +464,174 @@ header .button {
 .back {
 	text-decoration: none;
 	color: #214051;
+	grid-column: 2/3;
+	margin-top: -90px;
+}
+
+.wrapperfoot {
+	margin: 0 auto;
+	padding: 0 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.colorbackground {
+	background-color: #04838d;
+}
+
+.einde {
+	padding: 50px 0 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: minmax(10em, auto);
+	grid-column-gap: 20px;
+	color: white;
+}
+
+.Ops1 h3 {
+	font-family: "Poppinsbold";
+}
+
+.Ops1 {
+	border-right: 1px solid white;
+	padding-right: 20px;
+}
+
+.Ops2 h3 {
+	font-family: "Poppinsbold";
+	text-align: center;
+}
+
+.Ops2 {
+	border-right: 0.5px solid white;
+	padding-right: 20px;
+}
+
+.Ops2 img {
+	width: 100%;
+}
+
+footer p {
+	line-height: 1.7em;
+}
+
+footer p a {
+	text-decoration: none;
+	color: white;
+}
+
+input {
+	margin-top: 50px;
+	grid-column: 2/10;
+	padding: 5px 15px;
+
+	border-radius: 8px;
+	height: 35px;
+	width: 600px;
+	font-size: 20px;
+	border-width: 2px;
+}
+::placeholder {
+	color: #214051;
+}
+
+#name {
+	width: 400px;
+	grid-column: 2/6;
+}
+
+#nameOrganisation {
+	width: 400px;
+	margin-top: -50px;
+	grid-column: 6/10;
+}
+
+#Adress {
+	width: 905px;
+	margin-top: -0px;
+	grid-column: 2/10;
+}
+
+#status {
+	width: 400px;
+	margin-top: 25px;
+	grid-column: 2/6;
+}
+
+#email {
+	width: 400px;
+	margin-top: -45px;
+	grid-column: 6/10;
+}
+
+#phonenumber {
+	width: 400px;
+	margin-top: 5px;
+	grid-column: 2/6;
+}
+
+#date {
+	width: 400px;
+	margin-top: -45px;
+	grid-column: 6/10;
+}
+
+input[type="submit"] {
+	width: 100px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	color: #fff;
+	background-color: #214051;
+}
+
+.formText {
+	grid-column: 2/10;
+	margin-bottom: -50px;
+}
+
+#email2 {
+	width: 400px;
+	margin-top: -45px;
+	grid-column: 6/10;
+}
+
+#phonenumber2 {
+	width: 400px;
+	margin-top: 25px;
+	grid-column: 2/6;
+}
+
+#motivatie {
+	margin-top: -0px;
+	width: 400px;
+	height: 200px;
+}
+
+.formText2 {
+	grid-column: 6/10;
+	margin-bottom: -50px;
+	margin-top: -220px;
+}
+
+#volunteer1 {
+	grid-column: 4/10;
+	margin-left: -30px;
+	margin-top: -150px;
+}
+#volunteer2 {
+	grid-column: 4/10;
+	margin-left: -30px;
+	margin-top: -100px;
+}
+#volunteer3 {
+	grid-column: 4/10;
+	margin-left: -30px;
+	margin-top: -50px;
+}
+
+label {
+	margin-left: -70px;
+	padding-bottom: 50px;
+
+	grid-column: 7/10;
 }
