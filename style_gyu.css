@@ -249,7 +249,7 @@ header .button {
 .bubble {
 	height: 100px;
 	justify-content: center;
-	padding-left: 300px;
+	padding-left: 222px;
 	align-items: center;
 	position: relative;
 	transition-duration: 2s;
@@ -381,8 +381,8 @@ header .button {
 }
 .image4 img {
 	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
-	height: 120px;
-	width: 120px;
+	height: 200px;
+	width: 200px;
 	border-radius: 100%;
 	border: 10px;
 	margin-left: 30px;
@@ -395,7 +395,7 @@ header .button {
 
 .bubble5 {
 	height: 100px;
-	margin-left: 400px;
+	margin-left: 220px;
 	justify-content: center;
 	padding-left: 600px;
 	align-items: center;
@@ -415,8 +415,8 @@ header .button {
 }
 .image5 img {
 	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
-	height: 170px;
-	width: 170px;
+	height: 180px;
+	width: 180px;
 	border-radius: 100%;
 	border: 10px;
 	margin-left: 20px;
@@ -450,10 +450,10 @@ header .button {
 }
 .bubble7 {
 	height: 80px;
-	margin-bottom: 100px;
-	margin-left: 550px;
+	margin-bottom: -125px;
+	margin-left: 265px;
 	justify-content: center;
-	padding-left: 20px;
+	padding-left: 184px;
 	align-items: center;
 	position: relative;
 	transition-duration: 2s;
@@ -479,11 +479,11 @@ header .button {
 .bubble8 {
 	height: 80px;
 	margin-bottom: 100px;
-	margin-left: 950px;
-	padding-top: -200px;
+	margin-left: 893px;
+	padding-top: 117px;
 	padding-bottom: -200px;
 	justify-content: center;
-	padding-left: 20px;
+	padding-left: 217px;
 	align-items: center;
 	position: relative;
 	transition-duration: 2s;
@@ -499,9 +499,38 @@ header .button {
 }
 .image8 img {
 	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 	border-radius: 100%;
 	border: 10px;
-	margin-left: 20px;
+	margin-left: 40px;
+}
+.bubble9 {
+	height: 0px;
+	margin-bottom: 100px;
+	margin-left: 1300px;
+	padding-top: -200px;
+	padding-bottom: -200px;
+	justify-content: center;
+	padding-left: 20px;
+	align-items: center;
+	position: relative;
+	transition-duration: 2s;
+	width: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image9:hover {
+	transform: scale(0.95);
+	border-radius: 100%;
+	border: 10px;
+}
+.image9 img {
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 10px;
+	margin-left: 40px;
 }
