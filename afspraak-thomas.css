@@ -13,6 +13,10 @@
 	src: url(font/Poppins-Light.ttf);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	background-color: white;
@@ -224,7 +228,14 @@ header .button {
 	z-index: 0;
 }
 
-@keyframes fromAbove {
+.backgroundimg {
+	background-image: url("images_OnsAanbod/Asset 2.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*@keyframes fromAbove {
 	from {
 		transform: translateY(-5px);
 	}
@@ -232,10 +243,10 @@ header .button {
 	to {
 		transform: translateY(0);
 	}
-}
+}*/
 
 .intro h1 {
-	animation: fromAbove 1s ease-out;
+	/*animation: fromAbove 1s ease-out;*/
 	color: #214051;
 	text-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
@@ -387,12 +398,14 @@ header .button {
 }
 
 .appointment {
+	margin-bottom: 50px;
 	padding: 15px 50px;
 	border-radius: 15px;
 	border: 5px solid #214051;
 	width: 610px;
 	margin-left: 205px;
 	box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
+	background: #fff;
 }
 
 .appointment h3 {
@@ -500,12 +513,99 @@ select {
 	transition: background 0.3s, color 0.3s;
 }
 
-select:hover {
-	color: #fff;
-	background: #214051;
-}
-
 option {
 	color: #214051;
 	background: #fff;
+}
+
+label {
+	font-family: "Poppinsmed";
+	color: #214051;
+}
+
+textarea {
+	font-family: "Poppinsmed";
+	opacity: 0.8;
+}
+
+.naam-voornaam::placeholder {
+	font-family: "Poppinsmed";
+	opacity: 0.8;
+}
+
+.e-mail-box::placeholder {
+	font-family: "Poppinsmed";
+	opacity: 0.8;
+}
+
+.wrapperfoot {
+	margin: 0 auto;
+	padding: 0 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.colorbackground {
+	background-color: #04838d;
+}
+
+.einde {
+	padding: 50px 0 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: minmax(10em, auto);
+	grid-column-gap: 20px;
+	color: white;
+}
+
+.Ops1 h3 {
+	font-family: "Poppinsbold";
+}
+
+.Ops1 {
+	border-right: 1px solid white;
+	padding-right: 20px;
+}
+
+.Ops2 h3 {
+	font-family: "Poppinsbold";
+	text-align: center;
+}
+
+.Ops2 {
+	border-right: 0.5px solid white;
+	padding-right: 20px;
+}
+
+.Ops2 img {
+	width: 45%;
+}
+
+footer p {
+	line-height: 1.7em;
+}
+
+footer p a {
+	text-decoration: none;
+	color: white;
+}
+
+.Ops1 img {
+	width: 18%;
+}
+
+.info h2 {
+	color: #214051;
+}
+
+.wordlid h2 {
+	color: #214051;
+}
+
+.einde .Ops1:nth-child(5) {
+	border: none;
+}
+
+.einde p {
+	font-size: 13px;
 }

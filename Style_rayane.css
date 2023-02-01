@@ -19,6 +19,13 @@ body {
 	font-family: "Poppinsmed";
 }
 
+.bodywrap {
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(1, minmax(100px, auto));
+	display: grid;
+	margin-top: -180px;
+}
+
 .wrapper {
 	margin: 0 auto;
 	padding: 0 200px;
@@ -30,6 +37,7 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
+	z-index: 1;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(1, minmax(100px, auto));
 	position: relative;
@@ -73,7 +81,7 @@ header img {
 }
 
 header nav {
-	grid-column: 6 / 10;
+	grid-column: 3 / 12;
 	align-self: center;
 	position: absolute;
 	display: table;
@@ -97,6 +105,7 @@ header nav ul li a {
 	width: 33.333%;
 	text-align: center;
 	font-weight: bold;
+	font-size: 18px;
 	font-family: "Poppinsmed";
 	transition: 0.2s ease color;
 }
@@ -130,7 +139,7 @@ header nav a:after {
 	height: 40px;
 	font-weight: 600;
 	line-height: 40px;
-	font-size: 18px;
+	font-size: 14px;
 	text-decoration: none;
 	color: white;
 	background: #214051;
@@ -138,7 +147,7 @@ header nav a:after {
 	border-radius: 0px;
 	text-align: center;
 	position: relative;
-	padding: 5px 15px;
+	padding: 1px 10px;
 	transition: all 0.35s;
 	top: 25%;
 }
@@ -208,16 +217,17 @@ header .button {
 }
 
 .intro {
-	width: 100%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, minmax(100px, auto));
-	position: relative;
+	grid-column: 2/5;
+}
+
+.intro h1 {
+	text-decoration-line: underline;
+	color: #214051;
+	font-weight: bold;
+	font-size: 50px;
 }
 
 .backgroundimg {
-	background-image: url(images/introimg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -225,6 +235,8 @@ header .button {
 
 .backgroundimg svg {
 	margin-top: -100px;
+	z-index: 0;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0/0.4));
 	border-top: solid 20px white;
 }
 
@@ -236,7 +248,7 @@ header .button {
 }
 
 .intro h1:nth-child(1) {
-	grid-row: 1 / 2;
+	color: #214051;
 }
 
 .intro h1:nth-child(3) {
@@ -250,15 +262,17 @@ header .button {
 }
 
 .infowrapper {
-	background-color: #1e3c35;
+	background-color: #ffffff00;
 	margin: 0 auto;
 	padding: 0 200px;
-	display: flex;
-	flex-wrap: wrap;
+	dispaly: grid;
+	grid-template-rows: 18em 18em;
+	grid-template-columns: 30% 30% 30%;
+	grid: row gap 100px;
 }
 
 .info {
-	padding: 30px 0 30px 0;
+	padding: 200px 0 300px 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 80px 150px auto;
@@ -276,7 +290,6 @@ header .button {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	border-bottom: 1px solid black;
-	opacity: 50%;
 }
 
 .info p {
@@ -344,7 +357,7 @@ header .button {
 	border-top-right-radius: 9px;
 }
 img {
-	width: 50px;
+	width: 235px;
 	justify-content: center;
 	align-items: center;
 }
@@ -380,4 +393,97 @@ img {
 .methode1 {
 	grid-column: 2/4;
 	width: 100%;
+}
+p {
+	font: 200;
+	color: #04838d;
+}
+.colorbackground {
+	background-color: #04838d;
+}
+.einde {
+	padding: 50px 0 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: minmax(10em, auto);
+	grid-column-gap: 20px;
+	color: white;
+}
+.Ops1 h3 {
+	font-family: "Poppinsbold";
+}
+
+.Ops1 {
+	border-right: 1px solid white;
+	padding-right: 20px;
+}
+
+.Ops1 p {
+	color: white;
+}
+.Ops2 h3 {
+	font-family: "Poppinsbold";
+	text-align: center;
+}
+.Ops2 {
+	border-right: 0.5px solid white;
+	padding-right: 20px;
+}
+.Ops2 img {
+	width: 100%;
+}
+footer p {
+	line-height: 1.7em;
+}
+footer p a {
+	text-decoration: none;
+	color: white;
+}
+
+.leftimage {
+	grid-column: 2/7;
+}
+
+.leftimage img {
+	width: 100%;
+}
+
+.righttext {
+	margin-top: 50px;
+	grid-column: 7/11;
+	margin-left: 25px;
+	color: #214051;
+}
+
+.rightimage {
+	grid-column: 7/12;
+}
+
+.rightimage img {
+	width: 100%;
+}
+
+.lefttext {
+	grid-column: 2/6;
+	color: #214051;
+	margin-top: -340px;
+}
+
+.box1 {
+	width: 100%;
+	grid-column: 2/5;
+	margin-left: 10px;
+}
+.box2 {
+	width: 100%;
+	grid-column: 5/8;
+	margin-left: 50px;
+}
+.box3 {
+	width: 100%;
+	grid-column: 8/11;
+	margin-left: 90px;
+}
+.Ops1 img {
+	width: 18%;
 }
