@@ -497,6 +497,10 @@ header .button {
 	padding-right: 20px;
 }
 
+.Ops1 img {
+	width: 18%;
+}
+
 .Ops2 h3 {
 	font-family: "Poppinsbold";
 	text-align: center;
@@ -577,7 +581,7 @@ input {
 }
 
 input[type="submit"] {
-	width: 100px;
+	width: 200px;
 	margin-top: 25px;
 	margin-bottom: 50px;
 	color: #fff;
@@ -634,19 +638,19 @@ input[type="submit"] {
 }
 
 .label1 {
-	margin-left: -50px;
+	margin-left: -80px;
 	margin-top: -145px;
 	grid-column: 7/13;
 }
 
 .label2 {
-	margin-left: -50px;
+	margin-left: -80px;
 	margin-top: -110px;
 	grid-column: 7/13;
 }
 
 .label3 {
-	margin-left: -50px;
+	margin-left: -80px;
 	margin-top: -70px;
 	grid-column: 7/13;
 }
