@@ -1350,7 +1350,7 @@ footer p a {
 	}
 
 	.wrapper:nth-child(4) {
-		margin: 0 100px;
+		margin: 0 250px;
 		padding: 0 0px;
 		display: flex;
 		flex-wrap: wrap;
@@ -1371,7 +1371,7 @@ footer p a {
 
 	.menu-button-container {
 		display: flex;
-		grid-column: 12 / 13;
+		grid-column: 11 / 12;
 	  }
 
 	  .menu {
@@ -1650,10 +1650,10 @@ footer p a {
 	}
 	
 	.bubble1 {
-		grid-column: 2 / 6;
-		width: 425px;
+		grid-column: 1 / 2;
+		width: 200px;
 		grid-row: 2 / 3;
-		height: 425px;
+		height: 200px;
 		border-radius: 50%;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 	}
@@ -1679,7 +1679,7 @@ footer p a {
 	}
 	
 	.bubble4 {
-		grid-column: 4 / 6;
+		grid-column: 10 / 11;
 		width: 100px;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 		border-radius: 50%;
@@ -1689,11 +1689,12 @@ footer p a {
 	
 	.bubble5 {
 		grid-column: 9 / 10;
-		width: 325px;
-		grid-row: 1 / 3;
-		height: 325px;
+		width: 200px;
+		grid-row: 2 / 3;
+		height: 200px;
 		border-radius: 50%;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
+		display: none;
 	}
 	
 	.bubble6 {
@@ -1707,9 +1708,9 @@ footer p a {
 	}
 	
 	.bubble7 {
-		grid-column: 6 / 9;
-		width: 150px;
-		height: 150px;
+		grid-column: 5 / 6;
+		width: 75px;
+		height: 75px;
 		grid-row: 2 / 3;
 		border-radius: 50%;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
@@ -1725,14 +1726,17 @@ footer p a {
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 		margin-top: 50px;
 		align-self: end;
+		margin-left: 50px;
 	}
 	
 	.backgroundimg h1 {
 		color: #214051;
-		grid-column: 5 / 11;
+		grid-column: 1 / 11;
 		grid-row: 3 / 4;
 		text-align: center;
 		font-family: "Poppinsbold";
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 	
 	.infowrapper {
@@ -1746,9 +1750,9 @@ footer p a {
 	.info {
 		padding: 30px 0 30px 0;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 80px 110px auto;
-		grid-column-gap: 25px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 5em 6em auto 25em;
+		grid-row-gap: 25px;
 	}
 	
 	.info h2 {
@@ -1772,8 +1776,8 @@ footer p a {
 	}
 	
 	.info img {
-		grid-column: 2 / 3;
-		grid-row: 1 / 4;
+		grid-column: 1 / 2;
+		grid-row: 4 / 5;
 		width: 100%;
 		filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 0.4));
 	}
@@ -1787,14 +1791,14 @@ footer p a {
 	.wordlid {
 		padding: 50px 0 50px 0;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 80px 100px auto;
-		grid-column-gap: 50px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 80px 100px auto 33em;
+		grid-row-gap: 20px;
 	}
 	
 	.wordlid img {
 		grid-column: 1 / 2;
-		grid-row: 1 / 4;
+		grid-row: 4 / 5;
 		width: 50%;
 		margin-right: auto;
 		margin-left: auto;
@@ -1803,36 +1807,36 @@ footer p a {
 	
 	.wordlid h2 {
 		color: black;
-		grid-column: 2 / 3;
+		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		font-size: 30px;
 		font-family: "Poppinsbold";
 	}
 	
 	.wordlid .underlining {
-		grid-column: 2 / 3;
+		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		border-bottom: 1px solid black;
 		opacity: 50%;
 	}
 	
 	.wordlid p {
-		grid-column: 2/ 3;
+		grid-column: 1/ 2;
 		grid-row: 2 / 3;
 	}
 	
 	.wordlid .button {
 		grid-row: 3 / 4;
-		grid-column: 2 / 3;
+		grid-column: 1 / 2;
 		width: 25%;
 	}
 	
 	.cards {
 		padding: 30px 0 30px 0;
 		display: grid;
-		grid-template-columns: 30.3% 30.3% 30.3%;
-		grid-template-rows: 18em;
-		grid-column-gap: 25px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 18em 18em 18em;
+		grid-row-gap: 20px;
 		width: 100%;
 	}
 	
@@ -1849,8 +1853,8 @@ footer p a {
 	}
 	
 	.card2 {
-		grid-column: 2 / 3;
-		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 17% 20% 65%;
@@ -1860,8 +1864,8 @@ footer p a {
 	}
 	
 	.card3 {
-		grid-column: 3 / 4;
-		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 17% 20% 65%;
@@ -1935,7 +1939,7 @@ footer p a {
 	.einde {
 		padding: 50px 0 50px 0;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-template-rows: minmax(10em, auto);
 		grid-column-gap: 20px;
 		color: white;
@@ -1946,22 +1950,22 @@ footer p a {
 	}
 	
 	.Ops1 {
-		border-right: 1px solid white;
+		border-right: 0px solid white;
 		padding-right: 20px;
 	}
 	
 	.Ops2 h3 {
 		font-family: "Poppinsbold";
-		text-align: center;
+		text-align: start;
 	}
 	
 	.Ops2 {
-		border-right: 0.5px solid white;
+		border-right: 0px solid white;
 		padding-right: 20px;
 	}
 	
 	.Ops2 img {
-		width: 45%;
+		width: 34%;
 	}
 	
 	footer p {
@@ -1974,7 +1978,7 @@ footer p a {
 	}
 	
 	.Ops1 img {
-		width: 22%;
+		width: 13%;
 	}
 	
 	.info h2 {
