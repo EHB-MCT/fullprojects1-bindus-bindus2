@@ -19,10 +19,10 @@
 						<nav>
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="#">Wie is Bindus?</a></li>
-								<li><a href="#">Methode</a></li>
-								<li><a href="#">Ons aanbod</a></li>
-								<li><a href="#">Bindusblogt</a></li>
+								<li><a href="onze-team.html">Wie is Bindus?</a></li>
+								<li><a href="Methode.html">Methode</a></li>
+								<li><a href="onsAanbod.html">Ons aanbod</a></li>
+								<li><a href="bindusblogt.html">Bindusblogt</a></li>
 								<li><a class="active" href="afspraak-thomas.html">Afspraak maken</a></li>
 							</ul>
 						</nav>
@@ -43,98 +43,156 @@
 					<h1>Maak hier een afspraak</h1>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="calendar">
-				<div class="month">
-					<div id="prev" class="left-arrow"></div>
-					<div class="date">
-						<h1></h1>
-						<p></p>
+
+			<div class="container">
+				<div class="calendar">
+					<div class="month">
+						<div id="prev" class="left-arrow"></div>
+						<div class="date">
+							<h1></h1>
+							<p></p>
+						</div>
+						<div id="next" class="right-arrow"></div>
 					</div>
-					<div id="next" class="right-arrow"></div>
-				</div>
-				<div class="weekdays">
-					<div>Su</div>
-					<div>Mo</div>
-					<div>Tu</div>
-					<div>Wed</div>
-					<div>Thu</div>
-					<div>Fri</div>
-					<div>Sat</div>
-				</div>
-				<div class="days"></div>
-			</div>
-		</div>
-		<div class="appointment">
-			<div class="date-appointment">
-				<h3>Datum</h3>
-			</div>
-			<div class="date-appointment-onclick">
-				<p></p>
-			</div>
-			<div class="location">
-				<h3>Locatie</h3>
-			</div>
-			<div class="custom-select">
-				<select>
-					<option value="">Antwerpen</option>
-					<option value="">Brussel</option>
-					<option value="">Limburg</option>
-				</select>
-			</div>
-			<div class="hour"><h3>Uur</h3></div>
-			<div class="hour-choice">
-				<p>Voormiddag:</p>
-				<input type="radio" id="hour1" name="hour" />
-				<label for="hour1">9:00</label>
-				<input type="radio" id="hour2" name="hour" />
-				<label for="hour2">9:30</label>
-				<input type="radio" id="hour3" name="hour" />
-				<label for="hour3">10:00</label>
-				<input type="radio" id="hour4" name="hour" />
-				<label for="hour4">10:30</label>
-				<input type="radio" id="hour5" name="hour" />
-				<label for="hour5">11:00</label>
-				<input type="radio" id="hour6" name="hour" />
-				<label for="hour6">11:30</label>
-				<br />
-				<p>Namiddag</p>
-				<input type="radio" id="hour7" name="hour" />
-				<label for="hour7">13:00</label>
-				<input type="radio" id="hour8" name="hour" />
-				<label for="hour8">13:30</label>
-				<input type="radio" id="hour9" name="hour" />
-				<label for="hour9">14:00</label>
-				<input type="radio" id="hour10" name="hour" />
-				<label for="hour10">14:30</label>
-				<input type="radio" id="hour11" name="hour" />
-				<label for="hour11">15:00</label>
-				<input type="radio" id="hour12" name="hour" />
-				<label for="hour12">15:30</label>
-				<input type="radio" id="hour13" name="hour" />
-				<label for="hour13">16:00</label>
-				<input type="radio" id="hour14" name="hour" />
-				<label for="hour14">16:30</label>
-			</div>
-			<div class="name"><h3>Naam Voornaam</h3></div>
-			<div class="name-write">
-				<input type="text" class="naam-voornaam" placeholder="Ex: Dwayne Johnson" />
-			</div>
-			<div class="e-mail">
-				<h3>E-mail</h3>
-				<div class="e-mail-write">
-					<input type="e-mail" placeholder="e-mail" class="e-mail-box" />
+					<div class="weekdays">
+						<div>Su</div>
+						<div>Mo</div>
+						<div>Tu</div>
+						<div>Wed</div>
+						<div>Thu</div>
+						<div>Fri</div>
+						<div>Sat</div>
+					</div>
+					<div class="days"></div>
 				</div>
 			</div>
-			<div class="reason"><h3>Reden</h3></div>
-			<div class="reason-write">
-				<textarea name="resaon" id="reason" cols="30" rows="10" class="reason-text" placeholder="Schrijf hier waarvoor u een afspraak nodig hebt..."></textarea>
+			<div class="appointment">
+				<div class="date-appointment">
+					<h3>Datum</h3>
+				</div>
+				<div class="date-appointment-onclick">
+					<p></p>
+				</div>
+				<div class="location">
+					<h3>Locatie</h3>
+				</div>
+				<div class="custom-select">
+					<select>
+						<option value="">Antwerpen</option>
+						<option value="">Brussel</option>
+						<option value="">Limburg</option>
+					</select>
+				</div>
+				<div class="hour"><h3>Uur</h3></div>
+				<div class="hour-choice">
+					<p>Voormiddag:</p>
+					<input type="radio" id="hour1" name="hour" />
+					<label for="hour1">9:00</label>
+					<input type="radio" id="hour2" name="hour" />
+					<label for="hour2">9:30</label>
+					<input type="radio" id="hour3" name="hour" />
+					<label for="hour3">10:00</label>
+					<input type="radio" id="hour4" name="hour" />
+					<label for="hour4">10:30</label>
+					<input type="radio" id="hour5" name="hour" />
+					<label for="hour5">11:00</label>
+					<input type="radio" id="hour6" name="hour" />
+					<label for="hour6">11:30</label>
+					<br />
+					<p>Namiddag</p>
+					<input type="radio" id="hour7" name="hour" />
+					<label for="hour7">13:00</label>
+					<input type="radio" id="hour8" name="hour" />
+					<label for="hour8">13:30</label>
+					<input type="radio" id="hour9" name="hour" />
+					<label for="hour9">14:00</label>
+					<input type="radio" id="hour10" name="hour" />
+					<label for="hour10">14:30</label>
+					<input type="radio" id="hour11" name="hour" />
+					<label for="hour11">15:00</label>
+					<input type="radio" id="hour12" name="hour" />
+					<label for="hour12">15:30</label>
+					<input type="radio" id="hour13" name="hour" />
+					<label for="hour13">16:00</label>
+					<input type="radio" id="hour14" name="hour" />
+					<label for="hour14">16:30</label>
+				</div>
+				<div class="name"><h3>Naam Voornaam</h3></div>
+				<div class="name-write">
+					<input type="text" class="naam-voornaam" placeholder="Ex: Dwayne Johnson" />
+				</div>
+				<div class="e-mail">
+					<h3>E-mail</h3>
+					<div class="e-mail-write">
+						<input type="e-mail" placeholder="e-mail" class="e-mail-box" />
+					</div>
+				</div>
+				<div class="reason"><h3>Reden</h3></div>
+				<div class="reason-write">
+					<textarea name="resaon" id="reason" cols="30" rows="10" class="reason-text" placeholder="Schrijf hier waarvoor u een afspraak nodig hebt..."></textarea>
+				</div>
+				<div class="submit">
+					<h3>
+						<span>Afspraak verzenden</span>
+					</h3>
+				</div>
 			</div>
-			<div class="submit">
-				<h3>
-					<span>Afspraak verzenden</span>
-				</h3>
+			<div class="colorbackground">
+				<div class="wrapperfoot">
+					<footer class="einde">
+						<div class="Ops1">
+							<h3>Openingsuren</h3>
+							<p>
+								Ma tot vrij: <br />
+								09:00 - 12:00 <br />
+								12:30 - 17:00 <br />
+								Za & zon gesloten
+							</p>
+						</div>
+
+						<div class="Ops1">
+							<h3>Contact</h3>
+							<p>
+								Brederodestraat 188 <br />
+								2018 Antwerpen <br />
+								+32 3 289 91 13 <br />
+								info@bindusvzw.be
+							</p>
+						</div>
+
+						<div class="Ops2">
+							<h3>Steun van</h3>
+
+							<a href="https://www.vlaanderen.be/"><img src="images/vlaanderen.png" /></a>
+							<a href="https://www.antwerpen.be/"><img src="images/antwerpen.png" /></a>
+							<a href="https://ec.europa.eu/esf/home.jsp"><img src="images/esf.png" /></a>
+							<a href="https://www.europawse.be/"><img src="images/europeseunie.png" /></a>
+							<a href="https://www.vgc.be/"><img src="images/brussel.png" /></a>
+						</div>
+
+						<div class="Ops1">
+							<h3>Links</h3>
+							<p>
+								<a href="index.html">Home</a> <br />
+								<a href="onze-team.html">Wie is Bindus?</a> <br />
+								<a href="Methode.html">Methode</a> <br />
+								<a href="onsAanbod.html">Ons aanbod</a> <br />
+								<a href="bindusblogt.html">Bindus blogt</a> <br />
+								<a href="afspraak-thomas.html">Afspraak maken</a>
+							</p>
+						</div>
+
+						<div class="Ops1">
+							<h3>Social</h3>
+
+							<a href="https://twitter.com/bindus_vzw"><img src="images/twitter.png" /></a>
+							<a href="https://www.facebook.com/bindusvzw"><img src="images/facebook.png" /></a>
+							<a href="https://www.instagram.com/bindus_vzw/"><img src="images/instagram.png" /></a>
+							<a href="https://www.youtube.com/channel/UCcibniUFxlWqnNSkkrzA5Gg/videos"><img src="images/youtube.jpg" /></a>
+							<a href="https://www.linkedin.com/company/bindusvzw/"><img src="images/linkedin.png" /></a>
+						</div>
+					</footer>
+				</div>
 			</div>
 		</div>
 	</body>
