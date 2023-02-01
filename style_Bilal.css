@@ -1371,7 +1371,7 @@ footer p a {
 
 	.menu-button-container {
 		display: flex;
-		grid-column: 12 / 13;
+		grid-column: 11 / 12;
 	  }
 
 	  .menu {
@@ -1651,9 +1651,9 @@ footer p a {
 	
 	.bubble1 {
 		grid-column: 2 / 6;
-		width: 425px;
+		width: 200px;
 		grid-row: 2 / 3;
-		height: 425px;
+		height: 200px;
 		border-radius: 50%;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 	}
@@ -1679,7 +1679,7 @@ footer p a {
 	}
 	
 	.bubble4 {
-		grid-column: 4 / 6;
+		grid-column: 10 / 11;
 		width: 100px;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 		border-radius: 50%;
@@ -1689,9 +1689,9 @@ footer p a {
 	
 	.bubble5 {
 		grid-column: 9 / 10;
-		width: 325px;
-		grid-row: 1 / 3;
-		height: 325px;
+		width: 200px;
+		grid-row: 2 / 3;
+		height: 200px;
 		border-radius: 50%;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 	}
@@ -1707,9 +1707,9 @@ footer p a {
 	}
 	
 	.bubble7 {
-		grid-column: 6 / 9;
-		width: 150px;
-		height: 150px;
+		grid-column: 5 / 6;
+		width: 75px;
+		height: 75px;
 		grid-row: 2 / 3;
 		border-radius: 50%;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
@@ -1729,10 +1729,12 @@ footer p a {
 	
 	.backgroundimg h1 {
 		color: #214051;
-		grid-column: 5 / 11;
+		grid-column: 1 / 11;
 		grid-row: 3 / 4;
 		text-align: center;
 		font-family: "Poppinsbold";
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 	
 	.infowrapper {
