@@ -701,6 +701,263 @@ header .button {
 	width: 250px;
 }
 
+.infowrapper {
+	background-color: #c7ddd8;
+	margin: 0 auto;
+	padding: 0 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info {
+	padding: 30px 0 30px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 80px 70px auto;
+	grid-column-gap: 50px;
+}
+
+.info h2 {
+	color: black;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	font-size: 30px;
+	font-family: "Poppinsbold";
+}
+
+.info .underlining {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	border-bottom: 1px solid black;
+	opacity: 50%;
+}
+
+.info p {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+.info img {
+	grid-column: 2 / 3;
+	grid-row: 1 / 4;
+	width: 100%;
+	filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.info .button {
+	grid-row: 3 / 4;
+	grid-column: 1 / 2;
+	width: 25%;
+}
+
+.wordlid {
+	padding: 50px 0 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 80px 100px auto;
+	grid-column-gap: 50px;
+}
+
+.wordlid img {
+	grid-column: 1 / 2;
+	grid-row: 1 / 4;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 15px solid #214051;
+}
+
+.wordlid h2 {
+	color: black;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	font-size: 30px;
+	font-family: "Poppinsbold";
+}
+
+.wordlid .underlining {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	border-bottom: 1px solid black;
+	opacity: 50%;
+}
+
+.wordlid p {
+	grid-column: 2/ 3;
+	grid-row: 2 / 3;
+}
+
+.wordlid .button {
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+	width: 25%;
+}
+
+.cards {
+	padding: 30px 0 30px 0;
+	display: grid;
+	grid-template-columns: 30.3% 30.3% 30.3%;
+	grid-template-rows: 18em;
+	grid-column-gap: 50px;
+	width: 100%;
+}
+
+.card1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 17% 20% 65%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 7px black;
+}
+
+.card2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 17% 20% 65%;
+	background-color: white;
+	box-shadow: 0px 0px 7px black;
+	border-radius: 10px;
+}
+
+.card3 {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 17% 20% 65%;
+	background-color: white;
+	box-shadow: 0px 0px 7px black;
+	border-radius: 10px;
+}
+
+.estetic {
+	background-color: #214051;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+}
+
+.card1 img {
+	height: 100%;
+	margin: 0 auto;
+	margin-top: -30px;
+	border: 4px solid #214051;
+	border-radius: 40px;
+}
+
+.card2 img {
+	height: 100%;
+	margin: 0 auto;
+	margin-top: -30px;
+	border: 4px solid #214051;
+	border-radius: 40px;
+}
+
+.card3 img {
+	height: 100%;
+	margin: 0 auto;
+	margin-top: -30px;
+	border: 4px solid #214051;
+	border-radius: 40px;
+}
+
+.card1 .add {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.card2 .add {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.card3 .add {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrapperfoot {
+	margin: 0 auto;
+	padding: 0 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.colorbackground {
+	background-color: #04838d;
+}
+
+.einde {
+	padding: 50px 0 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: minmax(10em, auto);
+	grid-column-gap: 20px;
+	color: white;
+}
+
+.Ops1 h3 {
+	font-family: "Poppinsbold";
+}
+
+.Ops1 {
+	border-right: 1px solid white;
+	padding-right: 20px;
+}
+
+.Ops2 h3 {
+	font-family: "Poppinsbold";
+	text-align: center;
+}
+
+.Ops2 {
+	border-right: 0.5px solid white;
+	padding-right: 20px;
+}
+
+.Ops2 img {
+	width: 45%;
+}
+
+footer p {
+	line-height: 1.7em;
+}
+
+footer p a {
+	text-decoration: none;
+	color: white;
+}
+
+.Ops1 img {
+	width: 18%;
+}
+
+.info h2 {
+	color: #214051;
+}
+
+.wordlid h2 {
+	color: #214051;
+}
+
+.einde .Ops1:nth-child(5) {
+	border: none;
+}
+
+.einde p {
+	font-size: 13px;
+}
+
 /* telphone */
 @media (max-width: 1024px) {
 	.wrapper {
