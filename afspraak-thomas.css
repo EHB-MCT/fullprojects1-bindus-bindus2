@@ -24,13 +24,14 @@ body {
 	padding: 0 200px;
 	display: flex;
 	flex-wrap: wrap;
+	grid-column: 1 / 11;
+	grid-row: 1 / 2;
 }
 
 .navwrap {
 	width: 100%;
 	margin: 0 auto;
 	display: grid;
-	z-index: 1;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(1, minmax(100px, auto));
 	position: relative;
@@ -74,7 +75,7 @@ header img {
 }
 
 header nav {
-	grid-column: 6 / 10;
+	grid-column: 3 / 11;
 	align-self: center;
 	position: absolute;
 	display: table;
@@ -88,7 +89,7 @@ header nav ul {
 
 header nav ul li {
 	display: inline;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 header nav ul li a {
@@ -223,8 +224,24 @@ header .button {
 	z-index: 0;
 }
 
+@keyframes fromAbove {
+	from {
+		transform: translateY(-5px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
 .intro h1 {
-	color: black;
+	animation: fromAbove 1s ease-out;
+	color: #214051;
+	text-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.navwrap {
+	z-index: 2;
 }
 
 .introwrap {
@@ -252,88 +269,108 @@ header .button {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	width: 100%;
 	height: 100vh;
 	color: #eee;
 	display: flex;
 	justify-content: start;
 	margin-left: 205px;
+	margin-bottom: 200px;
 }
 
-.agenda {
-	width: 45rem;
-	height: 52rem;
+.calendar {
+	width: 720px;
+	height: 832px;
 	background-color: #214051;
-	box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+	box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
 }
 
-.maand {
+.month {
 	width: 100%;
-	height: 12rem;
+	height: 192px;
 	background-color: #04838d;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+	text-shadow: 0 4.8px 8px rgba(0, 0, 0, 0.5);
 }
 
-.maand i {
-	font-size: 2.5rem;
+.left-arrow,
+.right-arrow {
+	width: 25px;
+	height: 25px;
+	transition: 0.5s;
+	float: left;
+	box-shadow: -2px 2px 0 #214051;
 	cursor: pointer;
 }
 
-.maand h1 {
-	font-size: 3rem;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 0.2rem;
-	margin-bottom: 1rem;
+.left-arrow:hover,
+.right-arrow:hover {
+	box-shadow: -2px 2px 0 #fff;
 }
 
-.maand p {
-	font-size: 1.6rem;
+.left-arrow {
+	transform: rotate(45deg);
+	margin-left: 50px;
+}
+
+.right-arrow {
+	transform: rotate(225deg);
+	margin-right: 50px;
+}
+
+.month h1 {
+	font-size: 48px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 3.2px;
+	margin-bottom: 16px;
+}
+
+.month p {
+	font-size: 25.6px;
 }
 
 .weekdays {
 	width: 100%;
-	height: 5rem;
-	padding: 0 0.4rem;
+	height: 80px;
+	padding: 0 6.4px;
 	display: flex;
 	align-items: center;
 }
 
 .weekdays div {
-	font-size: 1.5rem;
+	font-size: 24px;
 	font-weight: 400;
-	letter-spacing: 0.1rem;
-	width: calc(44.2rem / 7);
+	letter-spacing: 1.6px;
+	width: calc(707.2px / 7);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+	text-shadow: 0 4.8px 8px rgba(0, 0, 0, 0.5);
 }
 
-.dagen {
+.days {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0.2rem;
+	padding: 3.2px;
 }
 
-.dagen div {
-	font-size: 1.4rem;
-	margin: 0.3rem;
-	width: calc(40.2rem / 7);
-	height: 5rem;
+.days div {
+	font-size: 22.4;
+	margin: 4.8px;
+	width: calc(643.2px / 7);
+	height: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+	text-shadow: 0 4.8px 8px rgba(0, 0, 0, 0.5);
 	transition: background-color 0.2s;
 }
 
-.dagen div:hover:not(.today) {
+.days div:hover:not(.today) {
 	background-color: #262626;
 	/*border: 1px solid #777;*/
 	cursor: pointer;
@@ -346,4 +383,129 @@ header .button {
 
 .today {
 	background-color: #167;
+	cursor: pointer;
+}
+
+.appointment {
+	padding: 15px 50px;
+	border-radius: 15px;
+	border: 5px solid #214051;
+	width: 610px;
+	margin-left: 205px;
+	box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
+}
+
+.appointment h3 {
+	color: #214051;
+}
+
+.date-appointment-onclick {
+	background-color: #d9d9d9;
+	border-radius: 20px;
+	height: 50px;
+	width: 100%;
+}
+
+.date-appointment-onclick p {
+	color: #214051;
+	padding-left: 20px;
+	padding-top: 12.5px;
+}
+
+.naam-voornaam {
+	padding: 8px;
+	border: 2px solid #214051;
+	border-radius: 10px;
+}
+
+.reason-text {
+	padding: 8px;
+	border: 2px solid #214051;
+	border-radius: 10px;
+	width: 50%;
+}
+
+.hour-choice p {
+	color: #214051;
+}
+
+.submit {
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.submit h3 {
+	color: #fff;
+	padding: 10px 50px;
+	background-color: #214051;
+	letter-spacing: 2px;
+	display: block;
+	position: relative;
+	transition: all 0.5s;
+	top: 25%;
+	cursor: pointer;
+}
+
+.submit span {
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+}
+
+.submit h3::before,
+.submit h3::after {
+	transform: none;
+	content: "";
+	position: inherit;
+	border-radius: 0;
+}
+
+.submit h3:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #04838d;
+	border-radius: 0;
+	margin: 0 auto;
+	transition: all 0.5s;
+}
+
+.submit h3:hover {
+	color: #fff;
+	background-color: #04838d;
+}
+
+.submit h3:hover:after {
+	width: 100%;
+}
+
+.e-mail-box {
+	padding: 8px;
+	border: 2px solid #214051;
+	border-radius: 10px;
+	width: 300px;
+}
+
+select {
+	font-family: "Poppinsmed";
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 2px #214051 solid;
+	color: #214051;
+	cursor: pointer;
+	transition: background 0.3s, color 0.3s;
+}
+
+select:hover {
+	color: #fff;
+	background: #214051;
+}
+
+option {
+	color: #214051;
+	background: #fff;
 }
