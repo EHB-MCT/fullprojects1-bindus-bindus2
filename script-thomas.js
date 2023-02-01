@@ -43,19 +43,8 @@ prevNextIcon.forEach((icon) => {
 		// click event
 		currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1; // active icons
 
-		// currMonth < 0 --> buttons disabled
-		// currMonth > 11 --> terug starten met jan etc
-		// = maand naar nul, jaar +1
-		/*if (currMonth < 0 || currMonth > 11) {
-			date = new Date(currYear, currMonth);
-			currYear = date.getFullYear();
-			currMonth = date.getMonth();
-		} else {
-			date = new Date();
-		}*/
-
-		/*if (currMonth < 0 && currYear == 2023) {
-			icon.prevIcon === ???
+		/*if (currMonth < 0 && currYear == "2023") {
+			prevIcon = stop;
 		}*/
 
 		if (currMonth > 11) {
@@ -71,11 +60,9 @@ prevNextIcon.forEach((icon) => {
 });
 
 daysTag.addEventListener("click", (e) => {
-	console.log(e.target.innerHTML);
 	document.querySelector(".date-appointment-onclick p").innerHTML = e.target.innerHTML + " " + months[currMonth] + " " + currYear;
 });
 
 eMail.addEventListener("click", (e) => {
-	console.log(e);
 	Swal.fire("Uw afspraak werd verzonden!", "Kijk regelmatig in uw mailbox om te weten of uw afspraak werd aanvaard", "success");
 });
