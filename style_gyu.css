@@ -17,6 +17,8 @@ body {
 	margin: 0;
 	background-color: #fff;
 	font-family: "Poppinsmed";
+	justify-content: center;
+	align-items: center;
 }
 
 .wrapper {
@@ -358,7 +360,7 @@ header .button {
 	width: 170px;
 	border-radius: 100%;
 	border: 10px;
-	margin-left: 20px;
+	margin-left: 0px;
 }
 
 .bubble4 {
@@ -446,7 +448,9 @@ header .button {
 	width: 120px;
 	border-radius: 100%;
 	border: 10px;
-	margin-left: 20px;
+}
+.image6 p {
+	padding-bottom: 120px;
 }
 .bubble7 {
 	height: 80px;
@@ -532,7 +536,7 @@ header .button {
 	width: 100px;
 	border-radius: 100%;
 	border: 10px;
-	margin-left: 40px;
+	margin-left: 20px;
 }
 .bubble10 {
 	height: 0px;
@@ -561,5 +565,43 @@ header .button {
 	width: 150px;
 	border-radius: 100%;
 	border: 10px;
-	margin-left: 40px;
+}
+
+.block2 {
+	background-color: #214051;
+	padding-bottom: 120px;
+	margin-top: 120px;
+}
+
+.block2 h1 {
+	justify-content: center;
+	display: flex;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+@keyframes scroll {
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(calc(-250px * 5));
+	}
+}
+.slider {
+	height: 100px;
+	margin: 50px;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+}
+
+.slider .slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(250px * 14);
+}
+
+.slider .slide {
+	height: 100px;
+	width: 250px;
 }
