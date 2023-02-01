@@ -584,6 +584,7 @@ input[type="submit"] {
 	width: 200px;
 	margin-top: 25px;
 	margin-bottom: 50px;
+	cursor: pointer;
 	color: #fff;
 	background-color: #214051;
 }
