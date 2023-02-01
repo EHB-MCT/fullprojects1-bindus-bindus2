@@ -24,6 +24,8 @@ body {
 	padding: 0 200px;
 	display: flex;
 	flex-wrap: wrap;
+	grid-column: 1 / 11;
+	grid-row: 1 / 2;
 }
 
 .navwrap {
