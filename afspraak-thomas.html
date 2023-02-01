@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="afspraak-thomas.css" />
 		<script src="script-thomas.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<title>Afspraak Maken</title>
 	</head>
 
@@ -75,54 +76,56 @@
 			<div class="location">
 				<h3>Locatie</h3>
 			</div>
-			<div class="location-choice">
-				<div class="select">
-					<span class="selected">Antwerpen</span>
-					<div class="caret"></div>
-				</div>
-				<ul class="menu">
-					<li class="selected-city">Antwerpen</li>
-					<li>Brussel</li>
-					<li>Limburg</li>
-				</ul>
+			<div class="custom-select">
+				<select>
+					<option value="">Antwerpen</option>
+					<option value="">Brussel</option>
+					<option value="">Limburg</option>
+				</select>
 			</div>
 			<div class="hour"><h3>Uur</h3></div>
 			<div class="hour-choice">
 				<p>Voormiddag:</p>
-				<input type="radio" id="hour" name="hour" class="hour-color" />
-				9:00
-				<input type="radio" id="hour" name="hour" />
-				9:30
-				<input type="radio" id="hour" name="hour" />
-				10:00
-				<input type="radio" id="hour" name="hour" />
-				10:30
-				<input type="radio" id="hour" name="hour" />
-				11:00
-				<input type="radio" id="hour" name="hour" />
-				11:30
+				<input type="radio" id="hour1" name="hour" />
+				<label for="hour1">9:00</label>
+				<input type="radio" id="hour2" name="hour" />
+				<label for="hour2">9:30</label>
+				<input type="radio" id="hour3" name="hour" />
+				<label for="hour3">10:00</label>
+				<input type="radio" id="hour4" name="hour" />
+				<label for="hour4">10:30</label>
+				<input type="radio" id="hour5" name="hour" />
+				<label for="hour5">11:00</label>
+				<input type="radio" id="hour6" name="hour" />
+				<label for="hour6">11:30</label>
 				<br />
 				<p>Namiddag</p>
-				<input type="radio" id="hour" name="hour" />
-				13:00
-				<input type="radio" id="hour" name="hour" />
-				13:30
-				<input type="radio" id="hour" name="hour" />
-				14:00
-				<input type="radio" id="hour" name="hour" />
-				14:30
-				<input type="radio" id="hour" name="hour" />
-				15:00
-				<input type="radio" id="hour" name="hour" />
-				15:30
-				<input type="radio" id="hour" name="hour" />
-				16:00
-				<input type="radio" id="hour" name="hour" />
-				16:30
+				<input type="radio" id="hour7" name="hour" />
+				<label for="hour7">13:00</label>
+				<input type="radio" id="hour8" name="hour" />
+				<label for="hour8">13:30</label>
+				<input type="radio" id="hour9" name="hour" />
+				<label for="hour9">14:00</label>
+				<input type="radio" id="hour10" name="hour" />
+				<label for="hour10">14:30</label>
+				<input type="radio" id="hour11" name="hour" />
+				<label for="hour11">15:00</label>
+				<input type="radio" id="hour12" name="hour" />
+				<label for="hour12">15:30</label>
+				<input type="radio" id="hour13" name="hour" />
+				<label for="hour13">16:00</label>
+				<input type="radio" id="hour14" name="hour" />
+				<label for="hour14">16:30</label>
 			</div>
 			<div class="name"><h3>Naam Voornaam</h3></div>
 			<div class="name-write">
 				<input type="text" class="naam-voornaam" placeholder="Ex: Dwayne Johnson" />
+			</div>
+			<div class="e-mail">
+				<h3>E-mail</h3>
+				<div class="e-mail-write">
+					<input type="e-mail" placeholder="e-mail" class="e-mail-box" />
+				</div>
 			</div>
 			<div class="reason"><h3>Reden</h3></div>
 			<div class="reason-write">
@@ -130,7 +133,7 @@
 			</div>
 			<div class="submit">
 				<h3>
-					<a href="#"><span>Afspraak verzenden</span></a>
+					<span>Afspraak verzenden</span>
 				</h3>
 			</div>
 		</div>
