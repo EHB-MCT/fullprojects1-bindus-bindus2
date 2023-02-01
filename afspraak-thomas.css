@@ -224,8 +224,19 @@ header .button {
 	z-index: 0;
 }
 
+@keyframes fromAbove {
+	from {
+		transform: translateY(-5px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
 .intro h1 {
-	color: black;
+	animation: fromAbove 1s ease-out;
+	color: #214051;
 	text-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
 
@@ -418,86 +429,6 @@ header .button {
 	color: #214051;
 }
 
-.location-choice {
-	position: relative;
-}
-
-.location-choice * {
-	box-sizing: border-box;
-}
-
-.select {
-	background: #fff;
-	color: #214051;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border: 2px solid #214051;
-	border-radius: 8px;
-	padding: 10px;
-	cursor: pointer;
-	transition: background 0.3s;
-}
-
-.selected-clicked {
-	border: 2px solid #214051;
-}
-
-.caret {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 6px solid #214051;
-	transition: 0.3s;
-}
-
-.caret:hover {
-	border-top: #fff;
-}
-
-.caret-rotate {
-	transform: rotate(180deg);
-}
-
-.menu {
-	list-style: none;
-	padding: 10px 15px;
-	background: #fff;
-	border: 2px #214051 solid;
-	border-radius: 8px;
-	color: #214051;
-	position: absolute;
-	top: 3em;
-	left: 50%;
-	width: 100%;
-	transform: translateX(-50%);
-	opacity: 0;
-	display: none;
-	transition: 0.2s;
-	z-index: 1;
-}
-
-.menu li {
-	padding: 13px 8px;
-	margin: 8px 0;
-	border-radius: 8px;
-	cursor: pointer;
-}
-
-.menu li:hover {
-	background: #cecece;
-}
-
-.selected-city {
-	background: #cecece;
-}
-
-.menu-open {
-	display: block;
-	opacity: 1;
-}
-
 .submit {
 	margin-top: 50px;
 	text-align: center;
@@ -513,11 +444,7 @@ header .button {
 	position: relative;
 	transition: all 0.5s;
 	top: 25%;
-}
-
-.submit a {
-	color: #fff;
-	text-decoration: none;
+	cursor: pointer;
 }
 
 .submit span {
@@ -554,4 +481,31 @@ header .button {
 
 .submit h3:hover:after {
 	width: 100%;
+}
+
+.e-mail-box {
+	padding: 8px;
+	border: 2px solid #214051;
+	border-radius: 10px;
+	width: 300px;
+}
+
+select {
+	font-family: "Poppinsmed";
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 2px #214051 solid;
+	color: #214051;
+	cursor: pointer;
+	transition: background 0.3s, color 0.3s;
+}
+
+select:hover {
+	color: #fff;
+	background: #214051;
+}
+
+option {
+	color: #214051;
+	background: #fff;
 }

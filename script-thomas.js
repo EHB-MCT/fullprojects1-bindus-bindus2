@@ -1,6 +1,8 @@
 const date = new Date(),
 	daysTag = document.querySelector(".days"),
-	prevNextIcon = document.querySelectorAll(".left-arrow , .right-arrow");
+	prevNextIcon = document.querySelectorAll(".left-arrow , .right-arrow"),
+	eMail = document.querySelector(".submit"),
+	prevIcon = document.querySelector(".left-arrow");
 
 let currYear = date.getFullYear(),
 	currMonth = date.getMonth(),
@@ -51,6 +53,19 @@ prevNextIcon.forEach((icon) => {
 		} else {
 			date = new Date();
 		}*/
+
+		/*if (currMonth < 0 && currYear == 2023) {
+			icon.prevIcon === ???
+		}*/
+
+		if (currMonth > 11) {
+			currMonth = 0;
+			currYear += 1;
+		}
+		if (currMonth < 0) {
+			currMonth = 11;
+			currYear -= 1;
+		}
 		renderCalendar();
 	});
 });
@@ -60,31 +75,7 @@ daysTag.addEventListener("click", (e) => {
 	document.querySelector(".date-appointment-onclick p").innerHTML = e.target.innerHTML + " " + months[currMonth] + " " + currYear;
 });
 
-const dropdowns = document.querySelectorAll(".location-choice");
-dropdowns.forEach((dropdown) => {
-	const select = dropdown.querySelector(".select");
-	const caret = dropdown.querySelector(".caret");
-	const menu = dropdown.querySelector(".menu");
-	const options = dropdown.querySelector(".menu li");
-	const selected = dropdown.querySelector(".selected");
-
-	select.addEventListener("click", () => {
-		select.classList.toggle("selected-clicked");
-		caret.classList.toggle("caret-rotate");
-		menu.classList.toggle("menu-open");
-	});
-
-	options.forEach((option) => {
-		option.addEventListener("click", () => {
-			selected.innerText = option.innerText;
-			select.classList.remove("select-clicked");
-			caret.classList.remove("caret-rotate");
-			menu.classList.remove("menu-open");
-
-			options.forEach((option) => {
-				option.classList.remove("selected-city");
-			});
-			option.classList.add("selected-city");
-		});
-	});
+eMail.addEventListener("click", (e) => {
+	console.log(e);
+	Swal.fire("Uw afspraak werd verzonden!", "Kijk regelmatig in uw mailbox om te weten of uw afspraak werd aanvaard", "success");
 });
