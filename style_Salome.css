@@ -560,6 +560,7 @@ footer p a {
 	grid-column: 2/10;
 
 	color: #214051;
+	margin-bottom: 20px;
 }
 .lefttext {
 	grid-column: 2/10;
