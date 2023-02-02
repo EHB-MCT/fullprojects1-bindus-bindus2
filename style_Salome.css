@@ -408,7 +408,7 @@ footer p a {
 }
 
 .card1 img {
-	height: 150%;
+	height: 120%;
 	margin: 0 auto;
 	margin-top: -30px;
 	border: 4px solid #214051;
@@ -417,7 +417,7 @@ footer p a {
 
 
 .card2 img {
-	height: 100%;
+	height: 120%;
 	margin: 0 auto;
 	margin-top: -30px;
 	border: 4px solid #214051;
@@ -425,14 +425,14 @@ footer p a {
 }
 
 .card3 img {
-	height: 100%;
+	height: 120%;
 	margin: 0 auto;
 	margin-top: -30px;
 	border: 4px solid #214051;
 	border-radius: 80px;
 }
 .card4 img {
-	height: 100%;
+	height: 95%;
 	margin: 0 auto;
 	margin-top: -30px;
 	border: 4px solid #214051;
