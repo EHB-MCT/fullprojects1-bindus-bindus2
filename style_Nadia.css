@@ -80,6 +80,7 @@ body {
 .dropbtn:hover .dropdown-content {
 	display: block;
 }
+
 .top-nav {
 	display: none;
 	flex-direction: row;
