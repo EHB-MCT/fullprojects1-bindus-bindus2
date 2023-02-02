@@ -46,6 +46,10 @@ body {
 	z-index: 1;
 }
 
+header img{
+	width :80%;
+}
+
   
 .backgroundimg svg {
 	margin-top: -100px;
