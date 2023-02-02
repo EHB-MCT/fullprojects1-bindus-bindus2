@@ -432,7 +432,7 @@ footer p a {
 	border-radius: 80px;
 }
 .card4 img {
-	height: 95%;
+	height: 90%;
 	margin: 0 auto;
 	margin-top: -30px;
 	border: 4px solid #214051;
@@ -440,7 +440,7 @@ footer p a {
 }
 
 .card5 img {
-	height: 100%;
+	height: 90%;
 	margin: 0 auto;
 	margin-top: -30px;
 	border: 4px solid #214051;
@@ -448,7 +448,7 @@ footer p a {
 }
 
 .card6 img {
-	height: 100%;
+	height: 90%;
 	margin: 0 auto;
 	margin-top: -30px;
 	border: 4px solid #214051;
@@ -459,6 +459,7 @@ footer p a {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0 auto;
+	margin-top: 20px;
 	text-align: center;
 }
 
@@ -466,6 +467,7 @@ footer p a {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0 auto;
+	margin-top: 20px;
 	text-align: center;
 }
 
@@ -473,6 +475,7 @@ footer p a {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0 auto;
+	margin-top: 20px;
 	text-align: center;
 }
 
@@ -480,6 +483,7 @@ footer p a {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0 auto;
+	margin-bottom: 80px;
 	text-align: center;
 }
 
@@ -498,5 +502,5 @@ footer p a {
 }
 .add span{
     font-size: 20px;
-    color: red;
+    color:#214051;
 }
