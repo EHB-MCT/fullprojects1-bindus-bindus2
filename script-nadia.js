@@ -1,5 +1,5 @@
-const button = document.querySelector(".button-script");
+const alertButton = document.querySelector(".button-script");
 
-button.addEventListener("click", (e) => {
-	console.log(e);
+alertButton.addEventListener("click", (e) => {
+	Swal.fire("Perfect", "U krijgt zo dadelijk een mail", "success");
 });
