@@ -6,6 +6,7 @@ const date = new Date(),
 
 let currYear = date.getFullYear(),
 	currMonth = date.getMonth(),
+	lastMonth = date.getMonth() - 1,
 	date1 = new Date();
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -41,11 +42,19 @@ renderCalendar();
 prevNextIcon.forEach((icon) => {
 	icon.addEventListener("click", () => {
 		// click event
-		currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1; // active icons
+		const previousClicked = icon.id === "prev";
 
-		/*if (currMonth < 0 && currYear == "2023") {
-			prevIcon = stop;
-		}*/
+		// TODO: replace by current month and year
+		// TODO: face arrow back
+		if (previousClicked && currMonth <= lastMonth && currYear == "2023") {
+			console.log("clicked in the past");
+			//prevIcon = stop;
+			renderCalendar();
+			console.log("stop execution");
+			return;
+		}
+
+		currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1; // active icons
 
 		if (currMonth > 11) {
 			currMonth = 0;
