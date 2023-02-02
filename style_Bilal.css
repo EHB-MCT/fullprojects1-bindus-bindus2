@@ -19,6 +19,8 @@ body {
 	font-family: "Poppinsmed";
 }
 
+/* Header + navigation (mobile & computer)*/
+
 .wrapper {
 	margin: 0 auto;
 	padding: 0 200px;
@@ -27,6 +29,58 @@ body {
 	grid-column: 1 / 11;
 	grid-row: 1 / 2;
 }
+
+.dropbtn {
+	color: black;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Poppinsmed";
+	transition: 0.2s ease color;
+	border: none;
+	background-color: white;
+	font-size: 16px;
+	background-color: white;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+
+  .dropbtn:hover .dropdown-content {
+	display: block;
+  }
 
 .top-nav {
 	display: none;
@@ -426,6 +480,8 @@ header .button {
 	font-family: "Poppinsbold";
 }
 
+/* 1ste section als intro (tekst en foto) */
+
 .infowrapper {
 	background-color: #c7ddd8;
 	margin: 0 auto;
@@ -475,6 +531,8 @@ header .button {
 	width: 25%;
 }
 
+/* 2de section (foto en tekst) */
+
 .wordlid {
 	padding: 50px 0 50px 0;
 	display: grid;
@@ -518,6 +576,8 @@ header .button {
 	width: 25%;
 }
 
+/* 3de section (3 cards) */ 
+
 .cards {
 	padding: 30px 0 30px 0;
 	display: grid;
@@ -536,7 +596,7 @@ header .button {
 	background-color: white;
 	border-radius: 10px;
 	box-shadow: 0px 0px 7px black;
-
+	width: 85%;
 }
 
 .card2 {
@@ -548,6 +608,7 @@ header .button {
 	background-color: white;
 	box-shadow: 0px 0px 7px black;
 	border-radius: 10px;
+	width: 85%;
 }
 
 .card3 {
@@ -559,6 +620,7 @@ header .button {
 	background-color: white;
 	box-shadow: 0px 0px 7px black;
 	border-radius: 10px;
+	width: 85%;
 }
 
 .estetic {
@@ -611,6 +673,8 @@ header .button {
 	margin: 0 auto;
 	text-align: center;
 }
+
+/* footer */
 
 .wrapperfoot {
 	margin: 0 auto;
@@ -683,6 +747,8 @@ footer p a {
 .einde p {
 	font-size: 13px;
 }
+
+/* kleiner schermen of Ipad */
 
 @media (max-width: 1024px) {
 	.wrapper {
@@ -1339,6 +1405,8 @@ footer p a {
 	}
 }
 
+/* mobile scherm */
+
 @media (max-width: 768px) {
 	.wrapper {
 		margin: 0 auto;
@@ -1350,7 +1418,7 @@ footer p a {
 	}
 
 	.wrapper:nth-child(4) {
-		margin: 0 100px;
+		margin: 0 250px;
 		padding: 0 0px;
 		display: flex;
 		flex-wrap: wrap;
@@ -1650,7 +1718,7 @@ footer p a {
 	}
 	
 	.bubble1 {
-		grid-column: 2 / 6;
+		grid-column: 1 / 2;
 		width: 200px;
 		grid-row: 2 / 3;
 		height: 200px;
@@ -1694,6 +1762,7 @@ footer p a {
 		height: 200px;
 		border-radius: 50%;
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
+		display: none;
 	}
 	
 	.bubble6 {
@@ -1725,6 +1794,8 @@ footer p a {
 		filter: drop-shadow(5px 6px 6px rgb(0 0 0 / 0.4));
 		margin-top: 50px;
 		align-self: end;
+		margin-left: 50px;
+		display: none;
 	}
 	
 	.backgroundimg h1 {
@@ -1748,9 +1819,9 @@ footer p a {
 	.info {
 		padding: 30px 0 30px 0;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 80px 110px auto;
-		grid-column-gap: 25px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 5em 6em auto 25em;
+		grid-row-gap: 25px;
 	}
 	
 	.info h2 {
@@ -1774,8 +1845,8 @@ footer p a {
 	}
 	
 	.info img {
-		grid-column: 2 / 3;
-		grid-row: 1 / 4;
+		grid-column: 1 / 2;
+		grid-row: 4 / 5;
 		width: 100%;
 		filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 0.4));
 	}
@@ -1789,14 +1860,14 @@ footer p a {
 	.wordlid {
 		padding: 50px 0 50px 0;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 80px 100px auto;
-		grid-column-gap: 50px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 80px 100px auto 33em;
+		grid-row-gap: 20px;
 	}
 	
 	.wordlid img {
 		grid-column: 1 / 2;
-		grid-row: 1 / 4;
+		grid-row: 4 / 5;
 		width: 50%;
 		margin-right: auto;
 		margin-left: auto;
@@ -1805,36 +1876,36 @@ footer p a {
 	
 	.wordlid h2 {
 		color: black;
-		grid-column: 2 / 3;
+		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		font-size: 30px;
 		font-family: "Poppinsbold";
 	}
 	
 	.wordlid .underlining {
-		grid-column: 2 / 3;
+		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		border-bottom: 1px solid black;
 		opacity: 50%;
 	}
 	
 	.wordlid p {
-		grid-column: 2/ 3;
+		grid-column: 1/ 2;
 		grid-row: 2 / 3;
 	}
 	
 	.wordlid .button {
 		grid-row: 3 / 4;
-		grid-column: 2 / 3;
+		grid-column: 1 / 2;
 		width: 25%;
 	}
 	
 	.cards {
 		padding: 30px 0 30px 0;
 		display: grid;
-		grid-template-columns: 30.3% 30.3% 30.3%;
-		grid-template-rows: 18em;
-		grid-column-gap: 25px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 18em 18em 18em;
+		grid-row-gap: 20px;
 		width: 100%;
 	}
 	
@@ -1851,8 +1922,8 @@ footer p a {
 	}
 	
 	.card2 {
-		grid-column: 2 / 3;
-		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 17% 20% 65%;
@@ -1862,8 +1933,8 @@ footer p a {
 	}
 	
 	.card3 {
-		grid-column: 3 / 4;
-		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 17% 20% 65%;
@@ -1937,7 +2008,7 @@ footer p a {
 	.einde {
 		padding: 50px 0 50px 0;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-template-rows: minmax(10em, auto);
 		grid-column-gap: 20px;
 		color: white;
@@ -1948,22 +2019,22 @@ footer p a {
 	}
 	
 	.Ops1 {
-		border-right: 1px solid white;
+		border-right: 0px solid white;
 		padding-right: 20px;
 	}
 	
 	.Ops2 h3 {
 		font-family: "Poppinsbold";
-		text-align: center;
+		text-align: start;
 	}
 	
 	.Ops2 {
-		border-right: 0.5px solid white;
+		border-right: 0px solid white;
 		padding-right: 20px;
 	}
 	
 	.Ops2 img {
-		width: 45%;
+		width: 34%;
 	}
 	
 	footer p {
@@ -1976,7 +2047,7 @@ footer p a {
 	}
 	
 	.Ops1 img {
-		width: 22%;
+		width: 13%;
 	}
 	
 	.info h2 {
