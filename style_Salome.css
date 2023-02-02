@@ -653,3 +653,23 @@ footer p a {
 .add a:hover {
 	color: #04838d;
 }
+
+.leesButton {
+	background-color: #04838d;
+	padding: 15px;
+	width: 130px;
+	height: 20px;
+	border-radius: 15px;
+	align-self: center;
+	margin-left: 85px;
+	margin-top: 70px;
+}
+
+.leesButton a {
+	text-decoration: none;
+	color: white;
+}
+
+.leesButton a:hover {
+	color: #214051;
+}
